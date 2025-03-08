@@ -32,7 +32,7 @@ const Header = ({ onMenuClick }) => {
         </div>
         <form onSubmit={handleSearch} className="flex-1 max-w-xl mx-4">
           <div className="relative">
-            <input type="text" placeholder="Rechercher..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <input type="text" placeholder="Rechercher..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full px-4 py-2 border border-purple-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" />
             {searchTerm && (
               <button type="button" onClick={handleClearSearch} className="absolute right-12 top-0 mt-2 mr-2">
                 <X className="h-5 w-5 text-gray-500" />

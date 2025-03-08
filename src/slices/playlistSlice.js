@@ -135,13 +135,13 @@ const initialState = {
             titre: "Les fonctions en Python",
             description: "Une vidéo expliquant les bases de Python.",
             miniature: "/python.jpg",
-            duree: "10:05",
+            duree: "12:10:05",
             likes: 2300,
             dislikes: 2,
             lien: "https://www.youtube.com/embed/rfscVS0vtbw?si=t2r_ZW8jNi74RhQI",
             auteur: {
               nom: "FreeCodeCamping",
-              prenom: "Chanel",
+              prenom: "Code",
               photo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fr-a6CwG4LOsgv6QEp0OjukRcUzvfOckX.png",
             },
             commentaires: [

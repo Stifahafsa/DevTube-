@@ -1,3 +1,5 @@
+"use client"
+
 import { useSelector, useDispatch } from "react-redux"
 import { setCurrentPlaylist } from "../slices/playlistSlice"
 
@@ -9,12 +11,12 @@ const PlaylistSidebar = () => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4">
       <h2 className="text-xl font-bold mb-4">Playlists</h2>
-      <div className="space-y-2">
+      <div className="flex overflow-x-auto space-x-4 pb-2">
         {playlists.map((playlist) => (
           <button
             key={playlist.idPlaylist}
-            className={`w-full text-left px-4 py-2 rounded-md cursor-pointer transition-colors ${
-              currentPlaylist === playlist.idPlaylist ? "bg-purple-600 text-white" : "hover:bg-gray-100"
+            className={`px-6 py-3 rounded-md whitespace-nowrap transition-colors cursor-pointer ${
+              currentPlaylist === playlist.idPlaylist ? "bg-purple-600 text-white " : "bg-gray-100 hover:bg-purple-200"
             }`}
             onClick={() => dispatch(setCurrentPlaylist(playlist.idPlaylist))}
           >
